@@ -14,29 +14,41 @@ let total = null
 
 function comida(botao){
     const selecionadoantescomida = document.querySelector(".pratos .selecionado")
+    const selecionadoantescheck = document.querySelector(".pratos .selecionado .nvl1")
     if(selecionadoantescomida!== null){
+        selecionadoantescheck.classList.add("escondido")
         selecionadoantescomida.classList.remove("selecionado");
     }
     botao.classList.add("selecionado")
-    const check = document.querySelector(".pratos .selecionado")
+    const check = document.querySelector(".pratos .selecionado .nvl1")
+    check.classList.remove("escondido")
+    selecionados()
 }
 
 function bebida(botao){
     const selecionadoantesbebida = document.querySelector(".bebidas .selecionado")
+    const selecionadoantescheck = document.querySelector(".bebidas .selecionado .nvl1")
     if(selecionadoantesbebida!== null){
+        selecionadoantescheck.classList.add("escondido")
         selecionadoantesbebida.classList.remove("selecionado");
     }
     botao.classList.add("selecionado")
     selecionados()
+    const check = document.querySelector(".bebidas .selecionado .nvl1")
+    check.classList.remove("escondido")
 }
 
 function sobremesa(botao){
     const selecionadoantessobremesa = document.querySelector(".sobremesa .selecionado")
+    const selecionadoantescheck = document.querySelector(".sobremesa .selecionado .nvl1")
     if(selecionadoantessobremesa!== null){
+        selecionadoantescheck.classList.add("escondido")
         selecionadoantessobremesa.classList.remove("selecionado");
     }
     botao.classList.add("selecionado")
     selecionados()
+    const check = document.querySelector(".sobremesa .selecionado .nvl1")
+    check.classList.remove("escondido")
 }
 
 function selecionados(){
