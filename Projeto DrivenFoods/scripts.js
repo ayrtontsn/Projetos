@@ -127,7 +127,7 @@ function concluir(){
 function pedir(opcao){
     if(opcao.classList.contains("confirmar")){
         
-        let inicio = `Olá, gostaria de fazer o pedido \n`
+        let inicio = `Olá, gostaria de fazer o pedido: \n`
         let enviar_comida = `- Prato: ${tcomida} \n`
         let enviar_bebida = `- Bebida: ${tbebida} \n`
         let enviar_sobremesa = `- Sobremesa: ${tsobremesa} \n`
